@@ -1,5 +1,7 @@
 package pl.jkanclerz.sales;
 
+import javax.persistence.Embeddable;
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.math.BigDecimal;
@@ -9,6 +11,7 @@ public class Reservation {
     @Id
     private String id;
     private BigDecimal total;
+    @Embedded
     private CustomerInfo customerInfo;
 
     public Reservation(String reservationId, BigDecimal total, CustomerInfo customerInfo) {
