@@ -11,3 +11,5 @@ mvn test
 ```bash
 mvn -B package
 ```
+
+foo
